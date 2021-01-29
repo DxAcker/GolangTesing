@@ -43,7 +43,7 @@ func main() {
 
 	fmt.Println("Mask:\t", ipToDec(maskGen(int(subnetbits)+netbits)))
 	fmt.Println("subnetbits:", subnetbits, "\tnetbits:", netbits, "\thostbits:", hostbits)
-	fmt.Println("You can use\t", math.Pow(2, float64(hostbits))-2, "hosts\t", int64(math.Pow(2, float64(netbits))), "networks whith", math.Pow(2, subnetbits), "subnets each")
+	fmt.Println("You can use\t", math.Pow(2, float64(hostbits))-2, "hosts\t", int64(math.Pow(2, float64(netbits))), "networks with", math.Pow(2, subnetbits), "subnets each")
 	fmt.Println("\tand total", totalcount, "networks")
 	// fmt.Println("Binary mask", maskGen(int(subnetbits)+netbits))
 }
